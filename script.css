@@ -1,0 +1,36 @@
+// Typing Effect
+const roles = ["AI/ML Student", "Web Developer", "IoT Enthusiast"];
+let i = 0, j = 0;
+let current = "";
+let isDeleting = false;
+
+function type() {
+    let element = document.getElementById("typing");
+
+    if (i < roles.length) {
+        if (!isDeleting && j <= roles[i].length) {
+            current = roles[i].substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+            current = roles[i].substring(0, j--);
+        }
+
+        element.innerHTML = current;
+
+        if (j === roles[i].length) isDeleting = true;
+        if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % roles.length;
+        }
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+
+
+// Contact Button
+function showMessage() {
+    const msg = document.getElementById("msg");
+    msg.innerText = "Thanks for visiting! Let's connect 🚀";
+}

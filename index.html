@@ -5,11 +5,13 @@
     <title>Bhumika | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
     <h1>Bhumika Yadav</h1>
-    <p>B.Tech CSE (AI/ML) Student</p>
+    <p id="typing"></p>
+    <img src="profile.jpg" alt="Profile Photo" class="profile">
 </header>
 
 <nav>
@@ -22,18 +24,17 @@
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a passionate B.Tech student specializing in AI & ML.
-        I have experience in web development, IoT (Arduino & Raspberry Pi),
-        and programming across multiple languages.
+        I am a B.Tech CSE (AI/ML) student passionate about building
+        intelligent systems using AI, Web Development, and IoT technologies.
     </p>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
     <ul>
-        <li>JavaScript, HTML, CSS</li>
+        <li>HTML, CSS, JavaScript</li>
         <li>Python, Java, C, C++</li>
-        <li>SQL & Database Management</li>
+        <li>SQL & Databases</li>
         <li>Arduino & Raspberry Pi</li>
         <li>Wokwi Simulation</li>
     </ul>
@@ -41,20 +42,22 @@
 
 <section id="projects">
     <h2>Projects</h2>
+
     <div class="card">
         <h3>Smart Pantry (IoT)</h3>
-        <p>Food container monitoring using Arduino sensors.</p>
+        <p>Monitors food levels using sensors and Arduino.</p>
     </div>
 
     <div class="card">
         <h3>Ride Demand Prediction</h3>
-        <p>Post-COVID demand prediction using data analysis.</p>
+        <p>Analyzed post-COVID demand using data science.</p>
     </div>
+
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <button onclick="showMessage()">Click to Connect</button>
+    <button onclick="showMessage()">Connect With Me</button>
     <p id="msg"></p>
 </section>
 
@@ -63,5 +66,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
